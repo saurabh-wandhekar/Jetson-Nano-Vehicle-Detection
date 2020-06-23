@@ -1,4 +1,4 @@
-# tensorrt_demo
+# TensorRT
 
 Example demonstrating how to optimize tensorflow model with TensorRT and run inferencing on NVIDIA Jetson or x86_64 PC platforms.  Highlights:  (The FPS numbers in this README are test results against JetPack 4.4, i.e. TensorRT 7, on Jetson Nano.)
 
@@ -67,7 +67,7 @@ Assuming this repository has been cloned at "${HOME}/SSD_Mobilenet_v2/TensorRT",
                         --output_file output.mp4
    ```
 
-**Note**: The above code gives inference speed of around 20FPS. Refer to point 3 for maximum inference speed.
+**Note**: The above code gives inference speed of around 20 FPS. Refer to point 3 for maximum inference speed.
 
 3. I did implement an "async" version of ssd detection code which uses the concept of multithreading. When I tested "ssd_mobilenet_v2_cars" on the same car video(1.mp4) with the async demo program on the Jetson Nano DevKit, frame rate improved by 7-8 FPS.
 
@@ -88,7 +88,7 @@ Assuming this repository has been cloned at "${HOME}/SSD_Mobilenet_v2/TensorRT",
    * [Verifying mAP of TensorRT Optimized SSD and YOLOv3 Models](https://jkjung-avt.github.io/trt-detection-map/)
    * Or if you'd like to learn how to train your own custom object detectors which could be easily converted to TensorRT engines and inferenced with "trt_ssd.py" and "trt_ssd_async.py": [Training a Hand Detector with TensorFlow Object Detection API](https://jkjung-avt.github.io/hand-detection-tutorial/)
 
-6. To run inference on a local server, run the script flask_ssd.py, go to the address of the local server and upload an image or a video. The output image will be displayed on the server. We tried to upload the output video but it did not work, maybe due to memory issues. The outputs of image/video can be found locally in the uploads folder.
+6. To run inference on a local server, run the script flask_ssd.py, go to the address of the local server and upload an image or a video. The output image will be displayed on the server. We tried to upload the output video but it did not work. The outputs of image/video can be found locally in the uploads folder.
 
    ```shell
    $ python3 flask_ssd.py
