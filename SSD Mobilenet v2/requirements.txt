@@ -1,0 +1,9 @@
+tensorflow==1.15.2
+opencv-python==4.1.1
+lxml
+pillow
+protobuf==3.12.2
+Flask
+pycuda
+
+-e
