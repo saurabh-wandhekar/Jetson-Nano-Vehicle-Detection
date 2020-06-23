@@ -16,6 +16,8 @@ You need **not** clone the [TensorFlow Object Detection API](https://github.com/
 
 ### Inference
 
+Navigate to the SSD Mobilenet v2 dir and follow the steps below:
+
 1) Run the following commands in the terminal:
 
 ```shell
@@ -57,6 +59,6 @@ After that, try the protoc command again (again, make sure you are issuing this 
 
 4) The model gave an inference speed of 20 fps on CPU system(Intel i5 8th gen processor) and 30 fps on GPU system(Gefore GTX 1050 and Intel i5 8th gen processor).
 
-5) This tensorflow model inferenced at only 4 fps on Jetson Nano. Tensorflow on Jetson Nano has memory leak issues. We converted our tensorflow model to TensorRT to improve performance. You can check the [TensorRT Readme](TensorRT/README_trt.md) for further instructions on how to convert to TensorRT and perform inference for TRT model.
+5) This tensorflow model inferenced at only 4 fps on Jetson Nano. Tensorflow on Jetson Nano has memory leak issues. We converted our tensorflow model to TensorRT to improve performance. You can check the [TensorRT Readme](README_trt.md) for further instructions on how to convert to TensorRT and perform inference for TRT model.
    
 
